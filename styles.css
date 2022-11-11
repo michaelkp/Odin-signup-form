@@ -1,7 +1,79 @@
-body {
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 logo {
     font-family: 'Amatic SC', cursive;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 350px;
+    max-width: 633px;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.heroImage {
+    
+}
+
+#heroBGImage {
+    left: 0;
+    min-width: 350px;
+    max-width: 45vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.heroCard {
+    background-color: black;
+    opacity: .4;
+    height: 15rem;
+    max-width: 45vw;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#heroCardLogo {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    width: auto;
+    height: 15rem;
+}
+
+#heroCardText {
+    display: flex;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+#heroPhotoCaption {
+    justify-content: center;
+    margin: auto;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#heroPhotoCaption a {
+    color: white;
 }
