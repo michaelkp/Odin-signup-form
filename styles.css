@@ -5,72 +5,78 @@
 }
 
 html, body {
-    margin: 0px;
-    padding: 0px;
-}
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
 
-
-
-logo {
-    font-family: 'Amatic SC', cursive;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
     position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
     min-width: 350px;
     max-width: 633px;
     height: 100vh;
-    overflow: hidden;
-
+    box-sizing: border-box;
 }
 
-.heroImage {
-    
-}
-
-#heroBGImage {
-    left: 0;
+#heroBGImage img {
     min-width: 350px;
     max-width: 45vw;
+    margin-bottom: -4px;
     height: 100vh;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .heroCard {
     background-color: black;
-    opacity: .4;
-    height: 15rem;
-    max-width: 45vw;
+    opacity: .25;
+    position: absolute;
+    top: 15rem;
+    height: clamp(5rem, 15rem, 15rem);
     min-width: 350px;
+    max-width: 45vw;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    justify-content: center;
 }
 
 #heroCardLogo {
+    border: solid 2px greenyellow;
     display: flex;
-    align-self: center;
-    position: absolute;
+    position: relative;
+    top: 5rem;
     width: auto;
-    height: 15rem;
+    height:  clamp(5vh, 10vh, 15vh);
 }
 
 #heroCardText {
+    border: solid 2px greenyellow;
     display: flex;
-    color: white;
-    opacity: 1;
+    position: relative;
+    top: 5rem;
     text-align: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
     font-family: 'Amatic SC', cursive;
+    font-size: clamp(5vh, 10vh, 15vw);
+    line-height: 0;
 }
 
 #heroPhotoCaption {
-    justify-content: center;
-    margin: auto;
     color: white;
     position: absolute;
-    bottom: 0;
+    width: 100%;
+    min-width: 350px;
+    max-width: 45vw;
+    bottom: 5px;
     text-align: center;
 }
 
