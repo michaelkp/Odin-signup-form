@@ -49,39 +49,43 @@
                         <legend>Let's do this!</legend>
                     <ul>
                         <li>
-                            <label for="firstname"> First Name: </label>
-                            <input type="text" id="firstName">
+                            <label for="firstName"> FIRST NAME <span aria-label="required">*</span></label>
+                            <input type="text" id="firstName" required>
                         </li>
                         <li>
-                            <label for="lastName"> Last Name: </label>
-                            <input type="text" id="lastName">
+                            <label for="lastName"> LAST NAME <span aria-label="required">*</span></label>
+                            <input type="text" id="lastName" required>
                         </li>
                         <li>
-                            <label for="mail"> E-Mail: </label>
-                            <input type="email" id="mail">
+                            <label for="mail"> E-MAIL <span aria-label="required">*</span></label>
+                            <input type="email" id="mail" required placeholder="mail@example.com">
                         </li>
                         <li>
-                            <label for="phoneNumber"> Phone Number: </label>
-                            <input type="number" id="phoneNumber">
+                            <label for="phoneNumber"> PHONE NUMBER (Optional)</label>
+                            <input type="tel" id="phoneNumber" placeholder="(123) 456-7890">
                         </li>
                         <li>
-                            <label for="password"> Password: </label>
-                            <input type="text" id="password">
+                            <label for="password"> PASSWORD (6 - 12 characters) <span aria-label="required">*</span></label>
+                            <input type="password" id="password" placeholder="********" required minlength="6" maxlength="12">
                         </li>
                         <li>
-                            <label for="confirmPassword"> Confirm Password: </label>
-                            <input type="text" id="confirmPassword">
+                            <label for="confirmPassword"> CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                            <input type="password" id="confirmPassword" placeholder="********" required minlength="6" maxlength="12">
                         </li>
                     </ul>
                 </fieldset>
+
+
+                </form>
+            </div>
+
+            <div class="createButton">
 
                 <button type="submit" disabled>Create Account</button>
 
                 <p>
                     Already have an account? <a href="">Log in</a>
                 </p>
-
-                </form>
             </div>
          </section>
      </main>
