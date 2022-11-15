@@ -50,27 +50,59 @@
                     <ul>
                         <li>
                             <label for="firstName"> FIRST NAME <span aria-label="required">*</span></label>
-                            <input type="text" id="firstName" required>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                required 
+                                aria-label="first name">
                         </li>
                         <li>
                             <label for="lastName"> LAST NAME <span aria-label="required">*</span></label>
-                            <input type="text" id="lastName" required>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                required 
+                                aria-label="last name">
                         </li>
                         <li>
                             <label for="mail"> E-MAIL <span aria-label="required">*</span></label>
-                            <input type="email" id="mail" required placeholder="mail@example.com">
+                            <input 
+                                type="email" 
+                                id="mail" 
+                                required 
+                                placeholder="mail@example.com" aria-label="e-mail address">
                         </li>
                         <li>
                             <label for="phoneNumber"> PHONE NUMBER (Optional)</label>
-                            <input type="tel" id="phoneNumber" placeholder="(123) 456-7890">
+                            <input 
+                                type="tel" 
+                                id="phoneNumber" 
+                                placeholder="(123) 456-7890" 
+                                pattern="[0-9]{10}" 
+                                title="Please enter a phone number with a 3 digit area code and a 7 digit phone number." 
+                                aria-label="10-digit phone number">
                         </li>
                         <li>
                             <label for="password"> PASSWORD (6 - 12 characters) <span aria-label="required">*</span></label>
-                            <input type="password" id="password" placeholder="********" required minlength="6" maxlength="12">
+                            <input 
+                                type="password"
+                                id="password" 
+                                placeholder="********" 
+                                title="Please enter a password with 6-12 characters including at least one number, one symbol and an uppercase letter." 
+                                required 
+                                minlength="6" 
+                                maxlength="12" 
+                                aria-label="password 6-12 characters">
                         </li>
                         <li>
                             <label for="confirmPassword"> CONFIRM PASSWORD <span aria-label="required">*</span></label>
-                            <input type="password" id="confirmPassword" placeholder="********" required minlength="6" maxlength="12">
+                            <input 
+                                type="password" 
+                                id="confirmPassword" placeholder="********" 
+                                title="Please confirm previously entered password." 
+                                required minlength="6" 
+                                maxlength="12" 
+                                aria-label="confirm password">
                         </li>
                     </ul>
                 </fieldset>
@@ -81,7 +113,7 @@
 
             <div class="createButton">
 
-                <button type="submit" disabled>Create Account</button>
+                <button type="submit" >Create Account</button>
 
                 <p>
                     Already have an account? <a href="">Log in</a>
