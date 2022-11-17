@@ -15,7 +15,12 @@ html, body {
     /* justify-content: flex-start; */
     background-color: #1b2d2f;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+
 }
 
 .hero {
@@ -23,22 +28,24 @@ html, body {
     flex-direction: column;
     position: relative;
     left: 0;
-    /* width: 100vw; */
-    /* min-width: 410px; */
-    max-width: 633px;
+    /* width: 100%; */
+    min-width: 400px;
+    max-width: 40vw;
     height: 100%;
     box-sizing: border-box;
 }
 
 #heroBGImage {
-    min-width: 410px;
-    max-width: 45vw;
+    position: relative;
+    width: 100%;
+    min-width: 400px;
+    max-width: 40vw;
 }
 
 #heroBGImage img {
-    min-width: 410px;
-    max-width: 45vw;
-    margin-bottom: -4px;
+    min-width: 400px;
+    max-width: 40vw;
+    /* margin-bottom: -4px; */
     height: 100vh;
 }
 
@@ -46,10 +53,10 @@ html, body {
     background-color: #31424a;
     opacity: .25;
     position: absolute;
-    top: 15rem;
+    top: 25vh;
     height: 15rem;
-    min-width: 410px;
-    max-width: 45vw;
+    /* min-width: 400px;
+    max-width: 40vw; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -73,8 +80,8 @@ html, body {
     color: white;
     position: absolute;
     width: 100%;
-    min-width: 410px;
-    max-width: 45vw;
+    min-width: 400px;
+    max-width: 40vw;
     bottom: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +151,7 @@ legend {
 }
 
 .signUp {
-    background-color: whitesmoke;
+    background-color: #c3cad0;
     /* width: 100vw; */
     width: 100vw;
 
@@ -152,7 +159,7 @@ legend {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
-    box-shadow: 0px 0px 8px 8px whitesmoke;
+    box-shadow: 0px 0px 8px 8px #c3cad0;
     color: #1b2d2f;
 }
 

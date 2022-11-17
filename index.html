@@ -12,115 +12,108 @@
 </head>
 <body>
     
-    <aside class="hero">
+    <div class="container">
+        <aside class="hero">
         
-        <section class="heroImage">
-            <div id="heroBGImage">
-                <img src="img/waves-web.jpg" alt="Waves behind a logo" >
-            </div>
-
-            <div class="heroCard">
-                <img src="img/odin-lined.png" alt="Odin logo image" id="heroCardLogo">
-            
-                <p id="heroCardText">ODIN</p>
-            </div>
-
-            <div id="heroPhotoCaption">
-                <p>Photo by <a href="https://unsplash.com/@mougrapher?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mourad Saadi</a> on <a href="https://unsplash.com/s/photos/waves?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                 </p>
-            </div>
-        </section>
-
-    </aside>
-     <main>
-         <section>
-            <div class="intro">
-                <p>
-                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-                </p>
-                <p>
-                    You <em>know</em> you want to.
-                </p>
-            </div>
-
-            <div class="signUp">
-                <form action="" method="post">
-                    <fieldset>
-                        <legend>Let's do this!</legend>
-                    <ul>
-                        <li>
-                            <label for="firstName"> FIRST NAME <span aria-label="required">*</span></label>
-                            <input 
-                                type="text" 
-                                id="firstName" 
-                                required 
-                                aria-label="first name">
-                        </li>
-                        <li>
-                            <label for="lastName"> LAST NAME <span aria-label="required">*</span></label>
-                            <input 
-                                type="text" 
-                                id="lastName" 
-                                required 
-                                aria-label="last name">
-                        </li>
-                        <li>
-                            <label for="mail"> E-MAIL <span aria-label="required">*</span></label>
-                            <input 
-                                type="email" 
-                                id="mail" 
-                                required 
-                                placeholder="mail@example.com" aria-label="e-mail address">
-                        </li>
-                        <li>
-                            <label for="phoneNumber"> PHONE NUMBER (Optional)</label>
-                            <input 
-                                type="tel" 
-                                id="phoneNumber" 
-                                placeholder="(123) 456-7890" 
-                                pattern="[0-9]{10}" 
-                                title="Please enter a phone number with a 3 digit area code and a 7 digit phone number." 
-                                aria-label="10-digit phone number">
-                        </li>
-                        <li>
-                            <label for="password"> PASSWORD (6 - 12 characters) <span aria-label="required">*</span></label>
-                            <input 
-                                type="password"
-                                id="password" 
-                                placeholder="********" 
-                                title="Please enter a password with 6-12 characters including at least one number, one symbol and an uppercase letter." 
-                                required 
-                                minlength="6" 
-                                maxlength="12" 
-                                aria-label="password 6-12 characters">
-                        </li>
-                        <li>
-                            <label for="confirmPassword"> CONFIRM PASSWORD <span aria-label="required">*</span></label>
-                            <input 
-                                type="password" 
-                                id="confirmPassword" placeholder="********" 
-                                title="Please confirm previously entered password." 
-                                required minlength="6" 
-                                maxlength="12" 
-                                aria-label="confirm password">
-                        </li>
-                    </ul>
-                </fieldset>
-
-
-                </form>
-            </div>
-
-            <div class="createButton">
-
-                <button type="submit" >Create Account</button>
-
-                <p>
-                    Already have an account? <a href="">Log in</a>
-                </p>
-            </div>
-         </section>
-     </main>
+            <section class="heroImage">
+                <div id="heroBGImage">
+                    <img src="img/waves-web.jpg" alt="Waves behind a logo" >
+                </div>
+                <div class="heroCard">
+                    <img src="img/odin-lined.png" alt="Odin logo image" id="heroCardLogo">
+        
+                    <p id="heroCardText">ODIN</p>
+                </div>
+                <div id="heroPhotoCaption">
+                    <p>Photo by <a href="https://unsplash.com/@mougrapher?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mourad Saadi</a> on <a href="https://unsplash.com/s/photos/waves?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                     </p>
+                </div>
+            </section>
+        </aside>
+         <main>
+             <section>
+                <div class="intro">
+                    <p>
+                        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    </p>
+                    <p>
+                        You <em>know</em> you want to.
+                    </p>
+                </div>
+                <div class="signUp">
+                    <form action="" method="post">
+                        <fieldset>
+                            <legend>Let's do this!</legend>
+                        <ul>
+                            <li>
+                                <label for="firstName"> FIRST NAME <span aria-label="required">*</span></label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    required
+                                    aria-label="first name">
+                            </li>
+                            <li>
+                                <label for="lastName"> LAST NAME <span aria-label="required">*</span></label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    required
+                                    aria-label="last name">
+                            </li>
+                            <li>
+                                <label for="mail"> E-MAIL <span aria-label="required">*</span></label>
+                                <input
+                                    type="email"
+                                    id="mail"
+                                    required
+                                    placeholder="mail@example.com" aria-label="e-mail address">
+                            </li>
+                            <li>
+                                <label for="phoneNumber"> PHONE NUMBER (Optional)</label>
+                                <input
+                                    type="tel"
+                                    id="phoneNumber"
+                                    placeholder="(123) 456-7890"
+                                    pattern="[0-9]{10}"
+                                    title="Please enter a phone number with a 3 digit area code and a 7 digit phone number."
+                                    aria-label="10-digit phone number">
+                            </li>
+                            <li>
+                                <label for="password"> PASSWORD (6 - 12 characters) <span aria-label="required">*</span></label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    placeholder="********"
+                                    title="Please enter a password with 6-12 characters including at least one number, one symbol and an uppercase letter."
+                                    required
+                                    minlength="6"
+                                    maxlength="12"
+                                    aria-label="password 6-12 characters">
+                            </li>
+                            <li>
+                                <label for="confirmPassword"> CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                                <input
+                                    type="password"
+                                    id="confirmPassword" placeholder="********"
+                                    title="Please confirm previously entered password."
+                                    required minlength="6"
+                                    maxlength="12"
+                                    aria-label="confirm password">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="createButton">
+                    <button type="submit" >Create Account</button>
+                    <p>
+                        Already have an account? <a href="">Log in</a>
+                    </p>
+                </div>
+             </section>
+         </main>
+    </div>
     
 
 </body>
