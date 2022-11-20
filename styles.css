@@ -177,22 +177,25 @@ input:required:invalid:not(:placeholder-shown) {
     box-shadow:0px 0px 2px 2px rgb(255, 192, 200);   
 }
 
-input:required:invalid:not(:placeholder-shown) + span.inputSpan::before {
+input:required:invalid:not(:placeholder-shown) + span.passwordSpan::before {
     content: "Error: Passwords do not match!";
-    /* visibility: visible; */
     display: block;
     background-color: white;
     padding: 5px 20px 5px 20px;
     border-radius: 7px;
 }
 
-input:required:not(:placeholder-shown) + span.inputSpan::before {
-    /* visibility: hidden; */
+input:required:invalid:not(:placeholder-shown) + span.emailSpan::before {
+    content: "Error: Please enter a valid e-mail!";
+    display: block;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 7px;
+}
+
+input:required:not(:placeholder-shown) + span.passwordSpan::before, span.emailSpan::before {
     display: none;
     color: red;
-    /* background-color: white; */
-    /* border: solid 1px white; */
-    /* border-radius: 7px; */
     text-align: center;
     margin-top: 5px;
     padding: 3px;
