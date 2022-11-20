@@ -41,23 +41,36 @@
                     </p>
                 </div>
                 <div class="signUp">
-                    <form action="" method="post">
+                    <form action="" method="post" class="validate">
                         <fieldset>
                             <legend>Let's do this!</legend>
                         <ul>
                             <li>
-                                <label for="firstName"> FIRST NAME <span aria-label="required">*</span></label>
+                                <label for="firstName"> FIRST NAME 
+                                    <span aria-label="required">*</span>
+                                </label>
                                 <input
                                     type="text"
                                     id="firstName"
-                                    required
-                                    aria-label="first name">
+                                    autocomplete="given-name"
+                                    minlength="1"
+                                    title="Please enter your first name."
+                                    aria-label="first name"
+                                    placeholder=""
+                                    autofocus
+                                    required>
                             </li>
                             <li>
-                                <label for="lastName"> LAST NAME <span aria-label="required">*</span></label>
+                                <label for="lastName"> LAST NAME
+                                     <span aria-label="required">*</span>
+                                </label>
                                 <input
                                     type="text"
                                     id="lastName"
+                                    autocomplete="family-name"
+                                    title="Please enter your last name."
+                                    placeholder=""
+                                    minlength="1"
                                     required
                                     aria-label="last name">
                             </li>
@@ -66,16 +79,22 @@
                                 <input
                                     type="email"
                                     id="mail"
+                                    autocomplete="email"
                                     required
-                                    placeholder="mail@example.com" aria-label="e-mail address">
+                                    placeholder="mail@example.com" aria-label="e-mail address"
+                                    title="Please enter a valid e-mail address."
+                                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+                                    <span class="inputSpan"></span>
                             </li>
                             <li>
                                 <label for="phoneNumber"> PHONE NUMBER (Optional)</label>
                                 <input
                                     type="tel"
                                     id="phoneNumber"
-                                    placeholder="(123) 456-7890"
-                                    pattern="[0-9]{10}"
+                                    placeholder="123-456-7890"
+                                    inputmode="tel"
+                                    autocomplete="tel"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                     title="Please enter a phone number with a 3 digit area code and a 7 digit phone number."
                                     aria-label="10-digit phone number">
                             </li>
@@ -85,21 +104,29 @@
                                     type="password"
                                     id="password"
                                     placeholder="********"
+                                    autocomplete="new-password"
                                     title="Please enter a password with 6-12 characters including at least one number, one symbol and an uppercase letter."
                                     required
                                     minlength="6"
                                     maxlength="12"
                                     aria-label="password 6-12 characters">
+                                    <span class="inputSpan"></span>
                             </li>
                             <li>
-                                <label for="confirmPassword"> CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                                <label for="confirmPassword"> CONFIRM PASSWORD 
+                                    <span aria-label="required">*</span>
+                                </label>
                                 <input
                                     type="password"
-                                    id="confirmPassword" placeholder="********"
+                                    id="confirmPassword"
+                                    autocomplete="new-password"
+                                    placeholder="********"
                                     title="Please confirm previously entered password."
                                     required minlength="6"
                                     maxlength="12"
                                     aria-label="confirm password">
+                                    <span class="inputSpan"></span>
+
                             </li>
                         </ul>
                     </fieldset>
